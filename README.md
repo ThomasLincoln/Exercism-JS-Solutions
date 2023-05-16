@@ -1,1 +1,1 @@
-# Exercism-JS-Solutions
+# Exercism-Solutions
