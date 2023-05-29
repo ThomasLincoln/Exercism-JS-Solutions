@@ -1,0 +1,47 @@
+export let cards = [];
+export let position;
+
+export function getItem(cards, position) {
+  return cards[position];
+}
+
+export let replacementCard;
+
+export function setItem(cards, position, replacementCard) {
+  cards.splice(position, 1, replacementCard);
+  return cards;
+}
+
+
+export let newCard;
+
+export function insertItemAtTop(cards, newCard) {
+  cards.push(newCard);
+  return cards;
+}
+
+export function removeItem(cards, position) {
+  cards.splice(position, 1);
+  return cards;
+}
+
+export function removeItemFromTop(cards) {
+  cards.pop();
+  return cards;
+}
+
+export function insertItemAtBottom(cards, newCard) {
+  cards.unshift(newCard);
+  return cards;
+}
+
+export function removeItemAtBottom(cards) {
+  cards.shift();
+  return cards;
+}
+
+export let stackSize;
+
+export function checkSizeOfStack(cards, stackSize) {
+  return (cards.length === stackSize);
+}
